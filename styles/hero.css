@@ -12,17 +12,21 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background-color: #F2FAF8;
   }
+
   #hero-1800 .cs-container {
     width: 100%;
     max-width: 80rem;
-    margin: auto;
+    margin: auto auto 0.5rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 3rem;
+    
   }
+
   #hero-1800 .cs-content {
     text-align: center;
     max-width: 39.375rem;
@@ -33,6 +37,7 @@
     position: relative;
     z-index: 2;
   }
+
   #hero-1800 .cs-topper {
     font-size: 1rem;
     line-height: 1.2em;
@@ -44,6 +49,7 @@
     margin-bottom: 0.25rem;
     display: block;
   }
+
   #hero-1800 .cs-title {
     /* 39px - 84px */
     font-size: clamp(2.4375rem, 6.3vw, 5.25rem);
@@ -56,6 +62,7 @@
     color: var(--headerColor);
     position: relative;
   }
+
   #hero-1800 .cs-text {
     /* 16px - 20px */
     font-size: clamp(1rem, 1.5vw, 1.25rem);
@@ -66,6 +73,7 @@
     margin: 0 0 2rem 0;
     color: var(--bodyTextColor);
   }
+
   #hero-1800 .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
@@ -78,13 +86,14 @@
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
-    border-radius: 0.25rem;
+    border-radius: 0.75rem;
     display: inline-block;
     position: relative;
     z-index: 1;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
+
   #hero-1800 .cs-button-solid:before {
     content: '';
     position: absolute;
@@ -98,121 +107,103 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
+
   #hero-1800 .cs-button-solid:hover:before {
     width: 100%;
   }
-  #hero-1800 .cs-video-group {
-    width: 100%;
-    height: 100vw;
-    min-height: 21.25rem;
+
+  #hero-1800 .cs-image-group {
+    /* font size scaling. Everything inside the group is in ems so they pull their value for em from the parent (this group div) and when the font is set to a vw, it scales the whole section down and grows proportionally with the screen width, stopping at the final em value declared in the second slot for the min function. */
+    font-size: min(2.25vw, .83em);
+    width: 40.75em;
+    min-height: 45em;
     display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
+    justify-content: center;
     position: relative;
     z-index: 1;
+    
   }
-  #hero-1800 .cs-video-group:before {
-    /* light grey section background. We attach it as a pseudo to the video group so it can be responsive and anchored in position to always be in the same position behind the cs-box */
-    content: '';
-    width: 300vw;
-    height: 500%;
-    background: #f7f7f7;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: 3.375rem;
-    left: 50%;
-    z-index: -1;
-    transform: translateX(-50%);
-  }
-  #hero-1800 .cs-box {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    /* 24px - 32px */
-    padding: clamp(1.5rem, 4vw, 2rem);
-    background-color: var(--primary);
-    display: flex;
-    align-items: flex-start;
-    /* 16px - 24px */
-    gap: clamp(1rem, 2vw, 1.5rem);
-  }
-  #hero-1800 .cs-header {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #hero-1800 .cs-box-icon {
-    /* 40px - 48px */
-    width: clamp(2.5rem, 4vw, 3rem);
-  }
-  #hero-1800 .cs-video-wrapper {
-    width: 100%;
-    /* changes to 90% at tablet, then back to 100% at desktop */
-    height: 100%;
+
+  #hero-1800 .cs-picture {
+    width: 33.875em;
+    /* height: auto; */
+    border-radius: 15.625em;
+    border: 0.625em solid #ffd3c6;
+    background-color: #FFD3C6;
+    overflow: hidden;
     display: block;
     position: relative;
   }
-  #hero-1800 .cs-video-wrapper:hover {
-    cursor: pointer;
-  }
-  #hero-1800 .cs-video-wrapper:hover .cs-play {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-  #hero-1800 .cs-video-wrapper video,
-  #hero-1800 .cs-video-wrapper .cs-picture {
+
+  #hero-1800 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    /* makes image act as a background image */
-    object-fit: cover;
   }
-  #hero-1800 .cs-video-wrapper video img,
-  #hero-1800 .cs-video-wrapper .cs-picture img {
+
+  #hero-1800 .cs-oval {
+    width: 45.4375em;
+    height: auto;
     position: absolute;
-    top: 1rem;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* ensures the full image is shown without cutting */
-    object-fit: contain;
-    scale:1.45;
+    top: 50%;
+    left: 50%;
     z-index: -1;
+    transform: translate(-50%, -50%) rotate(38deg);
   }
-  
-  #hero-1800 .cs-play {
-    /* 80px - 120px */
-    width: clamp(5rem, 14vw, 7.5rem);
-    height: clamp(5rem, 14vw, 7.5rem);
-    display: flex;
-    pointer-events: none;
+
+  #hero-1800 .cs-box {
+    text-align: center;
+    width: auto;
+    /* 16px - 40px */
+    padding: clamp(1em, 3vw, 2.5em) clamp(2.5em, 5vw, 4em);
+    /* padding-bottom: 1rem; */
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(8px);
-    border: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 3.75em;
+    z-index: 10;
+  }
+
+  #hero-1800 .cs-blob {
+    width: 100%;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform 0.3s, opacity 0.3s;
   }
-  #hero-1800 .cs-play.cs-hide {
-    transform: translate(-50%, -50%) scale(0) !important;
-    opacity: 0;
+
+  #hero-1800 .cs-number {
+    /* 24px - 49px */
+    font-size: clamp(1.25rem, 4.3vw, 3.0625rem);
+    line-height: 1.2em;
+    font-weight: 900;
+    margin: 0;
+    color: var(--secondary);
+    display: block;
+    z-index: 10;
   }
-  #hero-1800 .cs-icon {
-    width: 1.25rem;
-    height: auto;
+
+  #hero-1800 .cs-desc {
+    /* 12px - 16px */
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    font-weight: bold;
+    width: 100%;
+    max-width: 20ch;
+    color: var(--bodyTextColor);
+    position: relative;
+    z-index: 10;
   }
 }
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero-1800 .cs-container {
@@ -220,6 +211,7 @@
     align-items: stretch;
     justify-content: space-between;
   }
+
   #hero-1800 .cs-content {
     text-align: left;
     width: 47%;
@@ -229,37 +221,11 @@
     align-items: flex-start;
     align-self: flex-start;
   }
+
   #hero-1800 .cs-title {
     max-width: 10ch;
   }
-  #hero-1800 .cs-video-group {
-    width: 50%;
-    max-width: 39.375rem;
-    height: auto;
-    /* 530px - 880px */
-    min-height: clamp(33.125rem, 67vw, 55rem);
-    
-  }
-  #hero-1800 .cs-video-group:before {
-    bottom: 6.25rem;
-  }
-  #hero-1800 .cs-video-wrapper {
-    /* changes back to 100% at desktop */
-    height: 90%;
-    clip-path: inset(0 0 clamp(2.6rem, -500vw, 3rem) 0);
-  }
-  #hero-1800 .cs-video-wrapper video img,
-  #hero-1800 .cs-video-wrapper .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* makes image act as a background image */
-    object-fit: cover;
-    scale: 1;
-    z-index: 1;
-  }
+
   #hero-1800 .cs-box {
     width: 80%;
     max-width: 19.1875rem;
@@ -270,18 +236,28 @@
     /* -112px to 200px */
     left: calc(clamp(7.25rem, 17vw, 12.5rem) * -1);
   }
-  #hero-1800 .cs-video-wrapper .cs-picture img {
-    z-index: 0;
+  #hero-1800 .cs-image-group {
+    font-size: min(1.3vw, 1em);
+    height: 65em;
+    /* sends it to the right in the 2nd position */
+    order: 2;
   }
 }
+
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #hero-1800 .cs-video-wrapper {
     height: 100%;
     clip-path: inset(0 0 6.3rem 0);
   }
+
   #hero-1800 .cs-box {
     bottom: 6.3rem;
+  }
+  #hero-1800 .cs-image-group {
+    font-size: min(1.2vw, 1em);
+    /* sends it to the right in the 2nd position */
+    order: 2;
   }
 }
 
@@ -295,6 +271,7 @@
     padding: var(--sectionPadding);
     position: relative;
   }
+
   #services-1800 .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -304,6 +281,7 @@
     align-items: center;
     gap: clamp(3rem, 6vw, 4rem);
   }
+
   #services-1800 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
@@ -313,9 +291,11 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
+
   #services-1800 .cs-title {
     max-width: 25ch;
   }
+
   #services-1800 .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
@@ -335,6 +315,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
+
   #services-1800 .cs-button-solid:before {
     content: '';
     position: absolute;
@@ -348,9 +329,11 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
+
   #services-1800 .cs-button-solid:hover:before {
     width: 100%;
   }
+
   #services-1800 .cs-card-group {
     width: 100%;
     margin: 0;
@@ -361,6 +344,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 2vw, 1.25rem);
   }
+
   #services-1800 .cs-item {
     text-align: center;
     list-style: none;
@@ -382,12 +366,15 @@
     z-index: 1;
     overflow: hidden;
   }
+
   #services-1800 .cs-item:hover .cs-background:before {
     opacity: 0.8;
   }
+
   #services-1800 .cs-item:hover .cs-background img {
     transform: scale(1.2);
   }
+
   #services-1800 .cs-link {
     text-decoration: none;
     width: 100%;
@@ -402,6 +389,7 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+
   #services-1800 .cs-number {
     font-size: 5.25rem;
     font-weight: 900;
@@ -415,6 +403,7 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--bodyTextColorWhite);
   }
+
   #services-1800 .cs-h3 {
     /* 25px - 31px */
     font-size: clamp(1.5625rem, 2.5vw, 1.9375rem);
@@ -424,6 +413,7 @@
     margin: 0;
     color: var(--bodyTextColorWhite);
   }
+
   #services-1800 .cs-background {
     width: 100%;
     height: 100%;
@@ -433,6 +423,7 @@
     left: 0;
     z-index: -1;
   }
+
   #services-1800 .cs-background:before {
     /* background color overlay */
     content: '';
@@ -447,6 +438,7 @@
     z-index: 1;
     transition: background-color 0.3s, opacity 0.3s;
   }
+
   #services-1800 .cs-background img {
     width: 100%;
     height: 100%;
@@ -458,18 +450,21 @@
     transition: transform 0.6s;
   }
 }
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #services-1800 {
     /* 32px - 48px */
     padding-top: clamp(2rem, 4vw, 3rem);
   }
+
   #services-1800 .cs-content {
     text-align: left;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
   }
+
   #services-1800 .cs-item {
     grid-column: span 4;
   }
