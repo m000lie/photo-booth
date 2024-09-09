@@ -7,12 +7,12 @@
   #hero-1800 {
     /* 200px - 244px top */
     /* 60px - 100px  bottom */
-    padding: clamp(12.5rem, 16.82vw, 15.25rem) 1rem 0;
+    padding: clamp(11rem, 17vw, 15.25rem) 1rem 0;
     /* clips the svg wave from overflowing */
     overflow: hidden;
     position: relative;
     z-index: 1;
-    background-color: #F2FAF8;
+    background-color: #FFF1F4 ;
   }
 
   #hero-1800 .cs-container {
