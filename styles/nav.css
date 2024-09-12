@@ -468,7 +468,7 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     /* 12px - 24px */
-    padding: clamp(0.75rem, 2vw, 1.5rem) 0;
+    /* padding: clamp(0.75rem, 2vw, 1.5rem) 0; */
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     /* 12px - 24px */
@@ -500,7 +500,7 @@
   #cs-navigation .cs-logo {
     width: 18.4%;
     max-width: 21.875rem;
-    height: 2rem;
+    height: 4rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
     padding: 0;
