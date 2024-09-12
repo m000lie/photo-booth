@@ -504,6 +504,7 @@
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
     padding: 0;
+    padding-left: 3rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
