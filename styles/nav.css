@@ -24,6 +24,7 @@
     box-sizing: border-box;
     /* 12px - 24px */
     padding: clamp(0.75rem, 2vw, 1.5rem);
+    /* padding-top: 0; */
     /* 12px - 24px */
     border-radius: clamp(0.75rem, 2vw, 1.5rem);
     position: fixed;
@@ -36,7 +37,7 @@
   /* before is used for background styling */
   #cs-navigation::before {
     /* background color */
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     background: #fff;
@@ -80,6 +81,7 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0;
+    padding-left: 3rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -495,8 +497,22 @@
     gap: 1.5rem;
   }
   #cs-navigation .cs-toggle {
-    display: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 0 0 auto;
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.6s;
   }
+
+
+
   #cs-navigation .cs-logo {
     width: 18.4%;
     max-width: 21.875rem;
@@ -640,7 +656,7 @@
     transition: color 0.3s;
   }
   #cs-navigation .cs-button-solid:before {
-    content: '';
+    content: "";
     width: 0%;
     height: 100%;
     background: #fff;
