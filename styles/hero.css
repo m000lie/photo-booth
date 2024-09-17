@@ -23,7 +23,7 @@
   #hero-1800 {
     /* 200px - 244px top */
     /* 60px - 100px  bottom */
-    padding: clamp(10rem, 17vw, 15.25rem) 1rem 0;
+    padding: clamp(12.5rem, 17vw, 15.25rem) 1rem 0;
     /* clips the svg wave from overflowing */
     overflow: hidden;
     position: relative;
