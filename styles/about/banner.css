@@ -16,6 +16,7 @@
     z-index: 1;
   }
   #banner-1534 .cs-container {
+    /* height:0rem; */
     text-align: center;
     width: 100%;
     max-width: 80rem;
