@@ -9,6 +9,7 @@
     /* stops background graphic from overflowing */
     overflow: hidden;
     padding-bottom: 10rem;
+    background-color: #f7f7f7;
   }
   #services-1264 .cs-container {
     /* changes to 700px at desktop */

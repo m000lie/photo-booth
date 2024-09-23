@@ -4,22 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #hero-1800 .wow {
-    color: #ff4081; /* Highlight color */
-    text-shadow: 0 0 10px rgba(255, 64, 129, 0.7); /* Glow effect */
-    font-weight: bold;
-    font-size: clamp(3rem, 6.3vw, 5.25rem);
-    animation: wowAnimation 1.5s infinite alternate; /* Animation to make it jump out */
-  }
 
-  @keyframes wowAnimation {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.9);
-    }
-  }
   #hero-1800 {
     /* 200px - 244px top */
     /* 60px - 100px  bottom */
@@ -29,6 +14,7 @@
     position: relative;
     z-index: 1;
     background-color: #FFF1F4 ;
+    padding-bottom: 2rem;
   }
 
   #hero-1800 .cs-container {
