@@ -1,0 +1,19 @@
+#main-booking {
+  padding: var(--sectionPadding);
+  position: relative;
+  z-index:1;
+}
+
+#main-booking::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding-top: 5rem;
+  }

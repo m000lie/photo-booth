@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/about/sbs.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+
     <title>ezyPhoto</title>
   </head>
 
@@ -82,7 +86,9 @@
                 </span>
                 <ul class="cs-drop-ul">
                   <li class="cs-drop-li">
-                    <a href="" class="cs-li-link cs-drop-link">Registration</a>
+                    <a href="" class="cs-li-link cs-drop-link"
+                      >Photo Booth Rental</a
+                    >
                   </li>
                   <li class="cs-drop-li">
                     <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
@@ -94,6 +100,9 @@
               </li>
               <li class="cs-li">
                 <a href="/contact" class="cs-li-link"> Contact </a>
+              </li>
+              <li class="cs-li">
+                <a href="/booking" class="cs-li-link"> Booking </a>
               </li>
             </ul>
           </div>
@@ -181,7 +190,19 @@
             bring fun and excitement to any occasion. This is the service you've
             been searching for to elevate your next event.
           </p>
-          <a href="contact.html" class="cs-button-solid">Book Now</a>
+
+          <!-- <div
+            class="elfsight-app-dcf5ecb7-e9d0-4bfc-ac7c-793e3da8ba44"
+            data-elfsight-app-lazy
+          >
+            Book Now
+          </div> -->
+          <!-- <a
+            href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/fpndockss154/photo-booth-rental'});return false;"
+            class="cs-button-solid"
+          >Book Now</a> -->
+          <a href="booking.html" class="cs-button-solid">Book Now</a>
         </div>
         <!-- Left Image Section -->
         <div class="cs-image-group">
@@ -1202,6 +1223,16 @@
         </div>
       </div>
     </footer>
+
     <script src="src/main.js" type="module"></script>
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      async
+    ></script>
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
   </body>
 </html>
