@@ -6,7 +6,8 @@ export default defineConfig({
       input: {
         main: 'index.html',
         about: 'about.html',
-        contact: 'contact.html'
+        contact: 'contact.html',
+        booking: 'booking.html'
         // Add more entry points as needed
       }
     }
