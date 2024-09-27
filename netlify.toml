@@ -20,6 +20,23 @@
   from = "/booking"
   to = "/booking.html"
   status = 200
+[[redirects]]
+  from = "/graduation"
+  to = "/graduation.html"
+  status = 200
+[[redirects]]
+  from = "/party"
+  to = "/party.html"
+  status = 200
+[[redirects]]
+  from = "/corpo"
+  to = "/corpo.html"
+  status = 200
+[[redirects]]
+  from = "/wedding"
+  to = "/wedding.html"
+  status = 200
+
 
 
   ## (optional) Settings for Netlify Dev
